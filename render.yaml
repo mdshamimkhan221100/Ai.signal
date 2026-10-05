@@ -1,0 +1,11 @@
+services:
+  - type: web
+    name: ai-signal-backend
+    runtime: node
+    buildCommand: npm install
+    startCommand: npm start
+    envVars:
+      - key: TWELVE_DATA_API_KEY
+        sync: false
+      - key: PORT
+        value: 10000
